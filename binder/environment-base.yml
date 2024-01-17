@@ -1,0 +1,10 @@
+name: igrf
+channels:
+- conda-forge
+dependencies:
+- matplotlib=3.8
+- numpy=1.26
+- pandas=2.1
+- pyshp=2.3
+- python=3.11
+- xarray=2023.12
