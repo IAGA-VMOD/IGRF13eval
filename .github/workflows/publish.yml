@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - test-jupyter-book-build
+  workflow_dispatch:
 
 jobs:
   build:
