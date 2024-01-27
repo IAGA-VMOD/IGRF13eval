@@ -162,3 +162,6 @@ cython_debug/
 .DS_Store
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
+
+# jupyter-book
+_build
