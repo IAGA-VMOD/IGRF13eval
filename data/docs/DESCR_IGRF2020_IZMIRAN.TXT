@@ -1,0 +1,24 @@
+PUSHKOV INSTITUTE OF TERRESTRIAL MAGNETISM, IONOSPHERE AND RADIO WAVE PROPAGATION (IZMIRAN)
+Candidate Models for IGRF-2015, IGRF 2020 and SV 2017.5, 2020, 2022.5
+Authors:  Petrov V., ,Bondar T.
+
+	Swarm 1-sec vector data for all 3 satellites for Jan 2014 - Aug 2019 were used. Observatory and repeat station data were not available. Scalar data don’t use 
+	Magnetosphere field were eliminated by using only 3-hour intervals with Kp<1.5,  Kp for previous intervals <2.5 and variation of SYMH during 3-hour interval < 20 nt. Additional selection was applied for each data sample - only data when  AE index was < 100  and absolute value of SYMH< 30
+	Induction and crust field don’t remove.
+
+	All data for each 10 days were placed into grid of cells on Earth surface about the same size (~600*600 km) and median filter was used to get just one value for each component for each ñell. Equal space distribution was provided by selection method itself and using only days with space coverage >90%  ñells, time distribution  – using days with data time coverage >80% 
+
+	The spherical harmonics  models were calculated for each 10 day .Three pass parabolic approximations was used for all data for each spherical harmonic. After first fit points with deviation from fit more than two standard deviation were rejected and final fit was done on the base of remaining data.
+
+Harmonics  errors were calculated as mean square deviation from fit divided by 
+square  root of used point numbers  Sig/sqrt(N)
+.
+GH_2015.0 was calculated from fit for interval 01.01.2014 - 31.12.2015
+GH_2020.0 was calculated as extrapolated fit for interval 01.09.2017-31.08.2019
+SV_2017.5 was calculated as (GH_2020.0-GH_2015.0)/5, SV_2017 errors from GH errors.
+
+SV_2020.0 was calculated from extrapolated fit for interval 01.09.2017-31.08.2019
+
+	For some harmonics (for example h33, h22, g32) fits for 2015-2019 and 2018-2019 were significantly different (SV significantly change during 5 years interval) and extrapolation of 2-year set of data 3 years forward is very unreliable. So, SV_2022.5  was calculated on the base of 5 years (08.2014-08.2019) parabolic approximation. In view of such uncertainty in the forecast of the SV, we would like to use SV for 2020 (SV_2020) for the entire interval 2020-2025
+
+Gauss-Jordant method was used to solve the least squares equations.

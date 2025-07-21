@@ -1,0 +1,18 @@
+IGRF-13 SV candidate
+------------------------------
+Lead: Phil Livermore  (Leeds);
+Team: Maurits Metman (Leeds), Jon Mound (Leeds), Ciaran Beggan (BGS)
+
+Approach: Sequential estimation of SV using core fluid flow and magnetic diffusion
+
+Description: We introduce a two-step hybrid method to forecast field evolution which considers changes due both to fluid flow and diffusion in the core. In the first step, neglecting magnetic diffusion, we fit a steady core-flow model to the secular variation and main field given by CHAOS6-x9 over the time window 2018.3 - 2019.3 using the formalism of Whaler and Beggan (2015). In step two, neglecting the core flow, we use the residual to fit a radial structure of the poloidal magnetic field inside the core assuming it undergoes pure diffusion, using the framework described in Metman et al. (2019).
+We then forward evolve a simple physical model comprising both core-flow and diffusion to predict the Gauss coefficients in 2020 and 2025.  Dividing the difference by five gives the annual SV coefficients for our candidate model (up to degree and order 8).
+
+Further details will be given in our paper (Metman et al., in prep) for the EPS special issue.
+
+References:
+Metman, M. C., Livermore, P. W., Mound, J. E., and Beggan, C. D. (2019). Modelling decadal secular variation with only magnetic diffusion, Geophysical Journal International, ggz089,https://doi.org/10.1093/gji/ggz089
+
+Whaler, K. A. and Beggan, C. D. (2015). Derivation and use of core surface flows for forecasting secular variation.
+Journal of Geophysical Research: Solid Earth, 120, 1400–1414, https://doi.org/10.1002/2014JB011697
+
